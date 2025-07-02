@@ -21,13 +21,13 @@ objPath_TmplDir   = Path(__file__).parent / 'templates' # テンプレートデ�
 # 曜日情報のリスト
 # 注 要素の順番はday_id=0, 1, 2, 3, 4, 5, 6に対応
 lst_Days = [
-    { "slug": "sun", "label": "Sun.", },
-    { "slug": "mon", "label": "Mon.", },
-    { "slug": "tue", "label": "Tue.", },
-    { "slug": "wed", "label": "Wed.", },
-    { "slug": "thu", "label": "Thu.", },
-    { "slug": "fri", "label": "Fri.", },
-    { "slug": "sat", "label": "Sat.", }, 
+    { "name": "Sunday",    "slug": "sun", "label": "Sun.", },
+    { "name": "Monday",    "slug": "mon", "label": "Mon.", },
+    { "name": "Tuesday",   "slug": "tue", "label": "Tue.", },
+    { "name": "Wednesday", "slug": "wed", "label": "Wed.", },
+    { "name": "Thursday",  "slug": "thu", "label": "Thu.", },
+    { "name": "Friday",    "slug": "fri", "label": "Fri.", },
+    { "name": "Saturday",  "slug": "sat", "label": "Sat.", }, 
 ]
 
 # ジャンル→品詞(英語表記)の変換テーブル

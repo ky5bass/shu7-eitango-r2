@@ -1,9 +1,9 @@
 {% extends 'base.tpl' %}
-{% block title %}{{ lst_Days[int_TargetDayId]['label'] }}の束&nbsp;|&nbsp;JaVocabFlushcards{% endblock %}
+{% block title %}{{ lst_Days[int_TargetDayId]['name'] }}'s Bunch&nbsp;|&nbsp;週7英単語{% endblock %}
 {% block content %}
   <div class="container">
     <div class="row pb-3 pb-md-4 pt-1 pt-md-0">
-      <h1 class="col-md-8 py-0 px-3 px-md-1 m-0 fw-bold text-nowrap" style="font-family: 'Montserrat', sans-serif; font-weight: 700;">{{ lst_Days[int_TargetDayId]['label'] }}の束</h1>
+      <h1 class="col-md-8 py-0 px-3 px-md-1 m-0 fw-bold text-nowrap" style="font-family: 'Montserrat', sans-serif; font-weight: 700;">{{ lst_Days[int_TargetDayId]['name'] }}'s Bunch</h1>
       <p class="col-md-4 text-end pt-2 px-3 px-md-1 mt-auto mb-0">
         <i class="bi bi-arrow-repeat"></i>
         {{ str_UpdatedDate }}
