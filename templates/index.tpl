@@ -6,7 +6,6 @@
     <div transition-style="in:fade">
       <p class="text-center fs-4 py-2">週7英単語は、毎日の英単語学習を目的としたブラウザ型暗記カードです。</p>
       <p class="text-center fs-4 py-2">曜日ごとにカードの束（Bunch）を用意しています。その曜日の午前6時になると自動で内容が更新されます。</p>
-      <p class="text-center fs-5 py-2">よく知っているような言葉でも、簡単な文章で説明するのは難しいということがあります。週7日本語を使って、身近な言葉から難解な言葉まで幅広い語彙力を手に入れましょう！</p>
       <div class="d-grid col-sm-10 col-lg-8 mx-auto py-2">
         {% set str_todayBunchAbsPath = '/bunch/' ~ lst_Days[int_TodayId]['slug'] %} {# 引数absoluteとして渡す変数str_todayBunchAbsPathを設定 #}
         <a class="btn btn-secondary align-baseline fs-3 px-2 rounded-4" href="{{ str_todayBunchAbsPath }}" style="font-family: 'Montserrat', sans-serif; font-weight: 700;">
