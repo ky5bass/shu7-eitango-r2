@@ -6,19 +6,19 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="robots" content="noindex">
-  <link rel="icon" href="{{ str_RelativePath('/static/img/favicon.ico', str_Cwd) }}" >
+  <link rel="icon" href="/static/img/favicon.ico" >
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha256-MBffSnbbXwHCuZtgPYiwMQbfE7z+GOZ7fBPCNB06Z98=" crossorigin="anonymous"> -->
-  <link href="{{ str_RelativePath('/static/css/bootstrap_custom.css', str_Cwd) }}" rel="stylesheet">
-  <link href="{{ str_RelativePath('/static/css/bootstrap-icons.min.css', str_Cwd) }}" rel="stylesheet">
-  <link href="{{ str_RelativePath('/static/css/transition.css', str_Cwd) }}" rel="stylesheet">
+  <link href="/static/css/bootstrap_custom.css" rel="stylesheet">
+  <link href="/static/css/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="/static/css/transition.css" rel="stylesheet">
   <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
   <header class="sticky-top">
     <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="{{ str_RelativePath('/', str_Cwd) }}">
-          <img src="{{ str_RelativePath('/static/img/logo.svg', str_Cwd) }}" width="200" alt="週7日本語 ロゴ">
+        <a class="navbar-brand" href="/">
+          <img src="/static/img/logo.svg" width="200" alt="週7英単語 ロゴ">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,10 +29,10 @@
             {% set int_DayId = loop.index0 %}
             {# 注 特殊な変数loopに対してレシーバindex0を呼び出すことで0始まりの現在の繰り返し回数を取得できる #}
             {#    参考 https://www.gesource.jp/weblog/?p=3527 #}
-            {% set str_BunchAbsPath = '/bunch/' ~ dct_Day['symbol'] %} {# 引数absoluteに渡す変数BunchAbsPathを設定 #}
+            {% set str_BunchAbsPath = '/bunch/' ~ dct_Day['slug'] %}
             {# 注 `~`で文字列や数値を結合できる  #}
             <li class="nav-item light" style="font-weight: 700;">
-              <a class="nav-link fs-4 py-1 text-center {% if int_TargetDayId is defined and int_TargetDayId == int_DayId %}active{% endif %}" href="{{ str_RelativePath(str_BunchAbsPath, str_Cwd) }}">{{ dct_Day['name_ja'] }}</a>
+              <a class="nav-link fs-4 py-1 text-center {% if int_TargetDayId is defined and int_TargetDayId == int_DayId %}active{% endif %}" href="{{ str_BunchAbsPath }}">{{ dct_Day['label'] }}</a>
             </li>
             {% endfor %}
           </ul>
@@ -64,6 +64,6 @@
   </footer>
   
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha256-gvZPYrsDwbwYJLD5yeBfcNujPhRoGOY831wwbIzz3t0=" crossorigin="anonymous"></script> -->
-  <script src="{{ str_RelativePath('/static/js/bootstrap.bundle.min.js', str_Cwd) }}"></script>
+  <script src="/static/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

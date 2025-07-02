@@ -1,5 +1,5 @@
 {
-  "name": "shu7-nihongo",
+  "name": "shu7-eitango",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -11,10 +11,10 @@
   },
   "devDependencies": {
     "@cloudflare/kv-asset-handler": "^0.3.4",
-    "@cloudflare/vitest-pool-workers": "^0.5.2",
+    "@cloudflare/vitest-pool-workers": "^0.8.47",
     "@cloudflare/workers-types": "^4.20241230.0",
     "typescript": "^5.5.2",
-    "vitest": "2.1.8",
-    "wrangler": "^3.60.3"
+    "vitest": "^3.2.4",
+    "wrangler": "^4.22.0"
   }
 }
