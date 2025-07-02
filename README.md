@@ -1,6 +1,8 @@
 # ![ヘッダー画像](https://raw.githubusercontent.com/ky5bass/shu7-eitango/refs/heads/main/docs/img/header.svg)
 
-ウェブサイト [週7英単語](https://shu7-eitango.com) のプロジェクトです。
+ウェブサイト [週7英単語](https://shu7-eitango.com) のプロジェクト (Release 2) です。
+
+※旧プロジェクト→[shu7-eitango](https://github.com/ky5bass/shu7-eitango)
 
 # 初回ローカル環境構築時の履歴
 
